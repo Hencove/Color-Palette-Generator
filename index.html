@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Hencove Color Palette Tool</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<h1>Hencove Color Palette Tool</h1>
+		<div class="input-section">
+			<h2>Color Input</h2>
+			<form method="get" class="input-section__form">
+				<p>Select Color Input Format</p>
+				<div>
+					<input type="radio" id="hex-radio" name="input-format" value="hex" />
+					<label for="hex-radio">Hex</label>
+					
+					<div class="input-section__text-input reveal-if-active">
+						<label for="hex-input">Hex Value:</label>
+						<input type="text" id="hex-input" name="hex-input" placeholder="ffaf60"<input>
+					</div>
+				</div>
+				<div>
+					<input type="radio" id="rgb-radio" name="input-format" value="rgb" />
+					<label for="rgb-radio">RGB</label>
+					
+					<div class="input-section__text-input reveal-if-active">
+						<label for="rgb-input__r">R:</label>
+						<input type="text" id="rgb-input__r" name="rgb-input__r" placeholder="255"</input>
+						
+						<label for="rgb-input__g">G:</label>
+						<input type="text" id="rgb-input__g" name="rgb-input__g" placeholder="175"</input>
+						
+						<label for="rgb-input__b">B:</label>
+						<input type="text" id="rgb-input__b" name="rgb-input__b" placeholder="96"</input>
+					</div>
+				</div>
+				<div>
+					<input type="radio" id="cmyk-radio" name="input-format" value="cmyk" />
+					<label for="cmyk-radio">CMYK</label>
+				</div>
+				<div>
+					<input type="radio" id="hsl-radio" name="input-format" value="hsl" />
+					<label for="hsl-radio">HSL</label>
+				</div>
+			</form>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
